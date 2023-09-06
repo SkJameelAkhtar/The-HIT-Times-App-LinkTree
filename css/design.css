@@ -161,7 +161,9 @@ section {
 .social i {
     font-size: 40px;
 }
-
+a{
+    text-decoration: none;
+}
 .gridhead {
     display: flex;
     padding-left: 15px;
