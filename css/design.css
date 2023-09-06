@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: aliceblue;
+    font-family: 'Comic Sans', 'Secular One';
+    /* border: 1px solid yellow; */
+}
+
+body {
+    background-color: coral;
+}
+
+section {
+    background: rgb(18, 18, 18);
+    /* background-color: rgb(17,16,16); */
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    align-items: center;
+    padding: 30px 30px;
+    border-radius: 10px;
+    padding-bottom: 60px;
+    margin: 30px auto;
+}
+.thtbg{
+    width:35vw;
+    height:35vw;
+    background: url('images/thtbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    box-shadow: inset 0px 0px 30px 50px rgb(19, 19, 19);
+    margin-top: 5%;
+}
+.zindex {
+    z-index: 2;
+}
+
+.details {
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 60px; */
+}
+
+.logo {
+    background-image: url('images/thtlogo.jpg');
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.thttitle {
+    font-size: 35px;
+    /* font-family: 'Secular One'; */
+}
+
+.thttagline {
+    font-size: 20px;
+    font-family: 'Exo 2'
+}
+
+.getapp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.getapptext {
+    font-size: 25px;
+
+    color: limegreen;
+}
+
+.gplay {
+    background-image: url('images/google-play-badge.png');
+    height: 80px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale(1);
+    transition-duration: 0.3s;
+}
+
+.gplay:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}
+
+.linkcontainer {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.activities,
+.socials {
+    font-size: 17px;
+    padding: 5px;
+    gap: 20px;
+}
+
+.activity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-top: 10px;
+    transform: scale(1);
+    transition-duration: 0.30s;
+    cursor: pointer;
+    /* padding:5px; */
+}
+
+.activity img {
+    height: 60px;
+    width: 60px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.activitytext,
+.socialtext {
+    width: 80%;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.social {
+    height: 60px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transform: scale(1);
+    transition-duration: 0.30s;
+}
+
+.social i {
+    font-size: 40px;
+}
+
+.gridhead {
+    display: flex;
+    padding-left: 15px;
+}
+
+.activity:hover,
+.social:hover {
+    transform: scale(1.02);
+    transition-duration: 0.30s;
+    background-color: rgb(33, 33, 33);
+}
+
+.activity:active,
+.social:active {
+    transform: scale(0.98);
+    transition-duration: 0.30s;
+    background-color: blueviolet;
+}
+
+#instagram:hover {
+    border: 1px solid orange;
+}
+
+#youtube:hover {
+    border: 1px solid red;
+}
+
+#linkedin:hover {
+    border: 1px solid blue;
+}
+
+#facebook:hover {
+    border: 1px solid rgb(0, 0, 164);
+}
+
+@media screen and (max-width:900px) {
+    .linkcontainer {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        margin: 15px auto;
+    }
+    .thtbg{
+        width:65vw;
+        height:65%;
+        margin-top: 12%;
+        box-shadow: inset 0px 0px 30px 50px rgb(19, 19, 19);
+    }
+}
+
+@media screen and (max-width:680px) {
+    .getapptext {
+        display: none;
+    }
+
+    .logo {
+        height: 90px;
+        width: 90px;
+    }
+    .thtbg{
+        width:90vw;
+        height:90w;
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .details {
+        justify-content: space-around;
+        width: 80vw;
+    }
+
+    * {
+        font-size: small;
+    }
+
+    .activitytext,
+    .socialtext {
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .linkcontainer {
+        width: 80vw;
+    }
+
+    .thttitle {
+        font-size: 25px;
+    }
+
+    .thttagline {
+        font-size: 15px;
+    }
+    .thtbg{
+        width:95vw;
+        height:95vw;
+        margin-top: 12%;
+    }
+    #herosection{
+        height:90vh;
+    }
+}
