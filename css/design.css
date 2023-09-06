@@ -29,7 +29,7 @@ section {
 .thtbg{
     width:35vw;
     height:35vw;
-    background: url('images/thtbg.jpg');
+    background: url('../images/tht-background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -50,7 +50,7 @@ section {
 }
 
 .logo {
-    background-image: url('images/thtlogo.jpg');
+    background-image: url('../images/tht-logo.jpg');
     height: 150px;
     width: 150px;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@ section {
 }
 
 .gplay {
-    background-image: url('images/google-play-badge.png');
+    background-image: url('../images/google-play-badge.png');
     height: 80px;
     width: 200px;
     background-repeat: no-repeat;
